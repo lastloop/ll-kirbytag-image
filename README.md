@@ -1,7 +1,7 @@
 [![Kirby CMS Version 3](https://img.shields.io/badge/Kirby%20CMS-Version%203%2B-brightgreen.svg?style=flat)](https://github.com/getkirby)
-# Imagetag with srcset and lazyloading-class
+# Kirbytag: Image (srcset + lazyloading)
 
-This plugin replaces the default `(image: ...)` tag and adds a srcset and a lazyloading-class. The resulting `<img>` will look similar to this example:
+This plugin replaces the default Kirbytag  `(image: ...)` and adds `srcset` , `data-srcset` and `class="responsively lazy"` to the resulting `<img>` . It will look similar to this example:
 
 ````html
 <img class="responsively-lazy"
@@ -24,9 +24,10 @@ This plugin replaces the default `(image: ...)` tag and adds a srcset and a lazy
 [Download the files](https://github.com/lastloop/ll-kirbytag-image/archive/master.zip) and place them inside `/site/plugins/ll-kirbytag-image`.
 
 
+
 ## Setup
 
-The sizes can be specified in your `site/config/config.php`. The default sizes are shown below:
+The image widths can also be specified in your `site/config/config.php`:
 
 ```php
 return [
@@ -39,13 +40,17 @@ return [
 ];
 ```
 
+
+
 ## Lazyloading
 
 This plugin is supposed to be used with the [responsively-lazy](https://github.com/ivopetkov/responsively-lazy) script by Ivo Petkov. You have to download and add it to your website. 
 
+
+
 ## Modification
 
-To use this plugin with or without another script for lazyloading, you will have to change the `$newTag` at the end of the `index.php` file to fit your needs.
+To use this plugin with another script for lazyloading or with WebP or whatever, you will have to change at least the `$newTag` at the end of the `index.php` file to fit your needs.
 
 ````php
 $newTag = str_replace('<img', '<img class="responsively-lazy" sizes="100vw" data-srcset="' . implode(', ', $srcset) . '"' . 'srcset="data:image/gif;1x1px-transparent"', $newTag);
@@ -57,7 +62,9 @@ $newTag = str_replace('<img', '<img class="responsively-lazy" sizes="100vw" data
 
 ## License
 
-[MIT](https://opensource.org/licenses/MIT)
+Free to use under the [MIT License](https://opensource.org/licenses/MIT).
+
+
 
 ## Credits
 
