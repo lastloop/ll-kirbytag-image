@@ -1,0 +1,13 @@
+# System files
+# ------------
+
+Icon
+.DS_Store
+.Spotlight-V100
+.Trashes
+._*
+
+# Composer
+# --------
+
+/vendor

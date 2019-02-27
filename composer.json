@@ -1,0 +1,16 @@
+{
+    "name": "lastloop/ll-kirbytag-image",
+    "description": "An (image: ...) tag with srcset and lazyloading-class",
+    "type": "kirby-plugin",
+    "version": "1.0.0",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Ostermann",
+            "email": "post@lastloop.de"
+        }
+    ],
+    "require": {
+        "getkirby/composer-installer": "^1.1"
+    }
+}
