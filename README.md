@@ -1,7 +1,7 @@
 [![Kirby CMS Version 3](https://img.shields.io/badge/Kirby%20CMS-Version%203%2B-brightgreen.svg?style=flat)](https://github.com/getkirby)
 # Kirbytag: Image (srcset + lazyloading)
 
-This plugin replaces the default Kirbytag  `(image: ...)` and adds `srcset` , `data-srcset` and `class="responsively lazy"` to the resulting `<img>` . It will look similar to this example:
+This plugin replaces the default Kirbytag  `(image: ...)` and adds `srcset` , `data-srcset` and `class="responsively-lazy"` to the resulting `<img>` . It will look similar to this example:
 
 ````html
 <img class="responsively-lazy"
