@@ -34,7 +34,6 @@ Kirby::plugin('lastloop/ll-kirbytag-image', [
                     $imageResized = $img->resize($imageSize);
                     $srcset[] = $imageResized->url() . ' ' . $imageResized->width() . 'w';
                 };
-                $sizes = $tag->width;
                 $newTag = ($original['html'])($tag);
                 $newTag = str_replace('<img', '<img class="responsively-lazy" sizes="100vw" data-srcset="' . implode(', ', $srcset) . '"' . 'srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw=="', $newTag);
                 return $newTag;
